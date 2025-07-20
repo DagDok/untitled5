@@ -1,14 +1,23 @@
 fun main() {
-    val employe = 50
-    val trainees = 30
-    val employeSalary = employe*30000
-    val trainessSalary = trainees*20000
-    val totalSalary = employeSalary+trainessSalary
+    val startHour = 9
+    val startMinute = 39
+    val timePath = 425
+    val timePathHour = timePath / 60
+    val timePathMinute = timePath % 60
+    println(timePathHour)
+    println(timePathMinute)
+    var arrivalHour = startHour + timePathHour
+    var arrivalMinute = startMinute + timePathMinute
+    if (arrivalMinute >= 60) {
+        val hour = arrivalMinute / 60
+        arrivalMinute = arrivalMinute % 60
+        arrivalHour += hour
+        println("Время прибытия: $arrivalHour : $arrivalMinute")
 
-    println ("Расходы на постоянных сотрудников: $employeSalary")
-    println ("Общие расходы после прихода стажеров: $totalSalary")
-    println ("Средняя зп всех сотрудников: ${totalSalary/(employe+trainees) }  ")
+    } else {
+        println("Время прибытия: $arrivalHour : $arrivalMinute")
 
+    }
 
 
 }
