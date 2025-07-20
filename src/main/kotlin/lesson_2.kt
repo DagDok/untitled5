@@ -1,11 +1,14 @@
-import com.sun.jdi.Value
-import kotlin.math.pow
-
 fun main() {
-    val money = 70000
-    val percent = 16.7 / 100
-    val year = 20
-    var result = money * (1 + percent / 1).pow(year)
-    println(String.format("%.3f", result))
+    val name = "Ирина"
+    var lastnName = "Андреева"
+    val surName = "Сергеевна"
+    var age = 20
+    println("$lastnName $name $surName , $age")
+
+    lastnName = "Сидорова"
+    age = 22
+
+    println("$lastnName $name $surName , $age")
+
 
 }
