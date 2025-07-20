@@ -1,23 +1,15 @@
-fun main() {
-    val startHour = 9
-    val startMinute = 39
-    val timePath = 425
-    val timePathHour = timePath / 60
-    val timePathMinute = timePath % 60
-    println(timePathHour)
-    println(timePathMinute)
-    var arrivalHour = startHour + timePathHour
-    var arrivalMinute = startMinute + timePathMinute
-    if (arrivalMinute >= 60) {
-        val hour = arrivalMinute / 60
-        arrivalMinute = arrivalMinute % 60
-        arrivalHour += hour
-        println("Время прибытия: $arrivalHour : $arrivalMinute")
+fun main () {
+    val crystal = 7
+    val iron = 11
+    val buff = 0.2
+    val crystalBuff = (crystal*buff).toInt()
+    val ironBuff = (iron*buff).toInt()
+    println("С учетом бонуса Кристаллы: $crystalBuff")
+    println("С учетом бонуса Железо: $ironBuff")
 
-    } else {
-        println("Время прибытия: $arrivalHour : $arrivalMinute")
 
-    }
+
+
 
 
 }
