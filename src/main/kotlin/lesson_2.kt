@@ -1,8 +1,14 @@
-fun main () {
-    val a: Float = 3f
-    val b: Float = 4f
-    val c: Float = 3f
-    val d: Float = 5f
-    val sum = (a+b+c+d)/4
-    println ("Средний балл по английскому: $sum ")
+fun main() {
+    val employe = 50
+    val trainees = 30
+    val employeSalary = employe*30000
+    val trainessSalary = trainees*20000
+    val totalSalary = employeSalary+trainessSalary
+
+    println ("Расходы на постоянных сотрудников: $employeSalary")
+    println ("Общие расходы после прихода стажеров: $totalSalary")
+    println ("Средняя зп всех сотрудников: ${totalSalary/(employe+trainees) }  ")
+
+
+
 }
