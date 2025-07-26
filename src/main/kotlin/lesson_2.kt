@@ -1,14 +1,13 @@
 fun main() {
-    val name = "Ирина"
-    var lastnName = "Андреева"
-    val surName = "Сергеевна"
-    var age = 20
-    println("$lastnName $name $surName , $age")
-
-    lastnName = "Сидорова"
-    age = 22
-
-    println("$lastnName $name $surName , $age")
-
-
+    println("Для входа в приложение Вам нужно решить простой пример.")
+    println("Cколько будет 3+5?")
+    val userConsole = readln().toInt()
+    if (userConsole == 8) {
+        println("Верный ответ! Добро пожаловать!")
+    } else {
+        println("Неверный ответ! Доступ ограничен!")
+    }
 }
+
+
+
